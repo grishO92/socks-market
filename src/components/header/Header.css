@@ -1,0 +1,54 @@
+.nav {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 70px;
+  align-items: center;
+  background: var(--main-bg-color);
+  box-shadow: 0px 4px 33px -22px rgba(0, 0, 0, 0.68);
+  animation: 700ms slideDown cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  /* animation: 700ms fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+}
+.nav-btn {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+[aria-current].nav-btn {
+  color: var(--main-color);
+}
+
+:hover.nav-btn {
+  color: var(--secondary-color);
+}
+
+.logo {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 36px;
+  color: var(--main-color);
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 18px;
+}
+
+.profile {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 20px;
+  color: white;
+}
+
+:hover.profile,
+:focus-within.profile,
+[aria-current].profile {
+  background-color: var(--secondary-color);
+  color: white;
+  transform: scale(1.05);
+  outline-color: transparent;
+}
