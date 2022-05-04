@@ -1,0 +1,10 @@
+* {
+  --main-color: rgb(15, 196, 24);
+  --secondary-color: rgb(1, 121, 7);
+  --dark-color: rgb(38, 38, 38);
+  --main-bg-color: rgb(255, 255, 255);
+}
+
+body {
+  background: var(--main-bg-color);
+}

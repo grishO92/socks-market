@@ -1,0 +1,36 @@
+.item {
+  padding: 20px 0px;
+  position: absolute;
+  width: 60vw;
+  height: 80vh;
+  overflow: hidden;
+  top: -45vh;
+}
+
+.item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+}
+
+.inner-carousel {
+  position: relative;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}

@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <nav className="nav">
       <Link className="nav-btn logo" to="/">
-        socksMarket
+        socksBysocks
       </Link>
 
       <section className="nav-right">
