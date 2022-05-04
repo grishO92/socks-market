@@ -23,7 +23,7 @@
   height: 100vh;
   overflow: hidden;
   padding: 0px;
-  margin: 0px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,6 @@
 
 .btns {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 5%;
 }
