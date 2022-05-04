@@ -45,6 +45,7 @@
   border-radius: 50%;
   padding: 20px;
   color: white;
+  border: none;
 }
 
 :hover.profile,
