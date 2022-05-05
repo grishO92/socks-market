@@ -1,53 +1,47 @@
 import './ImgSlider.css';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import { images } from '../../images.js';
 
-import { Link } from 'react-router-dom';
-
 export const ImgSlider = () => {
-  const [position, setPosition] = useState(0);
-
-  const onRight = () => {
-    if (position < images.length - 1) {
-      setPosition(position + 1);
-    }
-  };
-  const onLeft = () => {
-    if (position > 0) {
-      setPosition(position - 1);
-    }
+  const settings = {
+    centerMode: true,
+    // className: 'center',
+    centerPadding: '60px',
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnHover: true,
   };
 
   return (
-    <section className="carousel">
-      <div className="btns">
-        <button onClick={onLeft}>&lt;&lt;</button>
-        <button onClick={onRight}>&gt;&gt;</button>
-      </div>
-      <motion.article className="inner-carousel">
-        {images.map((image, index) => {
-          return (
-            <motion.article
-              className="item"
-              key={index}
-              initial={{ scale: 0, rotation: -180 }}
-              animate={{
-                rotate: 0,
-                left: `${(index - position) * 60 - 30}vw`,
-                scale: index === position ? 1 : 0.8,
-              }}
-              transition={{
-                type: 'spring',
-                stiffness: 260,
-                damping: 20,
-              }}
-            >
-              <img src={image} alt="" />
-            </motion.article>
-          );
-        })}
-      </motion.article>
-    </section>
+    <Slider className="slider" {...settings}>
+      {images.map((image, index) => {
+        return (
+          <article key={index} className="img-wrapper">
+            <article className="item">
+              <img className="img" src={image} alt="" />
+              <div className="info">
+                <h2 className="title">Socks</h2>
+                <p className="sub-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  dolorem ullam distinctio animi officiis magni adipisci nemo
+                  explicabo dolore blanditiis. Enim sapiente sed perspiciatis
+                  repudiandae ad accusantium ipsa eaque reiciendis.
+                </p>
+                <Link className="info-btn" to="/">
+                  info
+                </Link>
+              </div>
+            </article>
+          </article>
+        );
+      })}
+    </Slider>
   );
 };

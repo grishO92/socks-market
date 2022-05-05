@@ -1,36 +1,97 @@
-.item {
-  padding: 20px 0px;
-  position: absolute;
-  width: 60vw;
-  height: 80vh;
-  overflow: hidden;
-  top: -45vh;
+.slider {
+  margin-top: 20px;
+  animation: 500ms slideDown cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.item img {
-  object-fit: cover;
-  width: 100%;
+.slider > .slick-arrow {
+  opacity: 0;
   height: 100%;
-  border-radius: 32px;
+  width: 5vw;
+  z-index: 1;
+}
+.slider :hover.slick-arrow {
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
 }
 
-.inner-carousel {
+.slider ul li > ::before button {
+  font-size: 10px;
+  color: rgb(150, 158, 171);
+}
+
+.slider li.slick-active ::before button {
+  color: white;
+}
+.slick-dots {
+  overflow: hidden;
+}
+
+.slider.slick-list {
+  overflow: initial;
+}
+
+.slider.slick-prev {
+  left: -75px;
+}
+
+.slider.slick-next {
+  right: -75px;
+}
+
+.img-wrapper {
+  border-radius: 4px;
+  cursor: pointer;
   position: relative;
 }
 
-.carousel {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  padding: 0px;
-
+.img-wrapper > .item {
+  height: 70vh;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0/69%) 0px 26px 50px -19px,
+    rgb(0 0 0 /73%) 0px 16px 40px -19px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  position: relative;
+  padding: 4px;
 }
 
-.btns {
+.img-wrapper > .item > .img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+}
+
+.img-wrapper > .item > :hover.img {
+  padding: 0;
+  border: 4px solid rgba(249, 249, 249, 0.8);
+  transition-duration: 300ms;
+}
+
+.info {
   position: absolute;
-  top: 12%;
-  left: 5%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  right: 20%;
+  background-color: rgba(255, 255, 255, 0.737);
+  padding: 20px;
+  border-radius: 22px;
+}
+.sub-title {
+  text-justify: newspaper;
+  color: var(--dark-color);
+}
+
+.info-btn {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 20px;
 }
