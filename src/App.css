@@ -6,7 +6,15 @@
 }
 
 body {
-  background: var(--main-bg-color);
+  background: rgb(189, 189, 189);
+  background: linear-gradient(
+    90deg,
+    rgb(190, 190, 190) 0%,
+    rgba(235, 235, 235, 1) 25%,
+    rgba(240, 240, 240, 1) 50%,
+    rgba(235, 235, 235, 1) 75%,
+    rgb(190, 190, 190, 1) 100%
+  );
 }
 
 .wrapper {

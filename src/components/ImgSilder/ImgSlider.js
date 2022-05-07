@@ -8,13 +8,12 @@ import { images } from '../../images.js';
 export const ImgSlider = () => {
   const settings = {
     centerMode: true,
-    // className: 'center',
-    centerPadding: '60px',
     dots: true,
     infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    speed: 500,
+    autoplaySpeed: 5000,
+    slidesToShow: 2,
+    slidesToScroll: 3,
     autoplay: true,
     pauseOnHover: true,
   };
@@ -28,15 +27,17 @@ export const ImgSlider = () => {
               <img className="img" src={image} alt="" />
               <div className="info">
                 <h2 className="title">Socks</h2>
-                <p className="sub-title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                  dolorem ullam distinctio animi officiis magni adipisci nemo
-                  explicabo dolore blanditiis. Enim sapiente sed perspiciatis
-                  repudiandae ad accusantium ipsa eaque reiciendis.
-                </p>
-                <Link className="info-btn" to="/">
-                  info
-                </Link>
+                <div className="btns">
+                  <Link className="info-btn" to="/">
+                    Add to Cart
+                  </Link>
+                  <Link className="info-btn" to="/">
+                    Details
+                  </Link>
+                  <Link className="info-btn" to="/">
+                    Favorites
+                  </Link>
+                </div>
               </div>
             </article>
           </article>
