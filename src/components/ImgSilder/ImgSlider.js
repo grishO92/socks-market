@@ -13,7 +13,7 @@ export const ImgSlider = () => {
     speed: 500,
     autoplaySpeed: 5000,
     slidesToShow: 2,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplay: true,
     pauseOnHover: true,
   };
