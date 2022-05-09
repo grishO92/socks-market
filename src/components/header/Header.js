@@ -21,6 +21,7 @@ export const Header = () => {
         </NavLink>
         <button className="nav-btn btn-profile" to="profile">
           <img
+            className="profile-pic"
             src="https://images.pexels.com/photos/1287513/pexels-photo-1287513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
