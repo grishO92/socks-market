@@ -13,6 +13,8 @@
 }
 .nav-btn {
   text-decoration: none;
+  transition-duration: 270ms;
+
   color: var(--dark-color);
 }
 
@@ -21,6 +23,7 @@
 }
 
 :hover.nav-btn {
+  transition-duration: 270ms;
   color: var(--secondary-color);
 }
 
@@ -46,8 +49,7 @@
   color: white;
   border: none;
   filter: brightness(110%);
-
-  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-duration: 500ms;
 }
 
 .btn-profile > .profile-pic {
@@ -61,10 +63,9 @@
 :focus-within.btn-profile,
 [aria-current].btn-profile {
   filter: brightness(100%);
-
   background-color: var(--secondary-color);
   color: white;
-  transform: scale(0.95);
   outline-color: transparent;
-  transition: transform 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: scale(0.95);
+  transition-duration: 350ms;
 }
