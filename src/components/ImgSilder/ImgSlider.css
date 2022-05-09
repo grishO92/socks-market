@@ -118,3 +118,7 @@
   color: white;
   border-radius: 20px;
 }
+
+.info .btns .info-btn:hover {
+  background: var(--secondary-color);
+}
