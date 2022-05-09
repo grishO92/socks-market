@@ -18,6 +18,16 @@
     transform: translateY(0%);
   }
 }
+@keyframes slideUp {
+  0% {
+    transform: translateY(130%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 
 @keyframes scaleUp {
   0% {
