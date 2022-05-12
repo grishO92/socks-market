@@ -11,9 +11,46 @@
   animation: 700ms slideUp cubic-bezier(0.785, 0.135, 0.15, 0.86);
   color: var(--dark-color);
 }
+.wrapper-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+}
 .categories {
   display: flex;
-  gap: 40px;
+  gap: 20px;
+}
+
+.wrapper-category::before,
+.wrapper-category::after {
+  margin: 40px 0;
+  width: 25vw;
+  height: 1px;
+  content: '';
+  background: var(--dark-color);
+}
+
+.category-btn {
+  padding: 0px 30px;
+  border-radius: 40px;
+  border: 1px solid transparent;
   color: var(--dark-color);
   font-size: 30px;
+  transition-duration: 400ms;
+  object-position: center;
+}
+
+.category-btn:hover {
+  color: white;
+  background: var(--main-color);
+  padding: 10px 20px;
+  transform: scale(1.1);
+  transition-duration: 350ms;
+}
+
+.wrapper-category :not(.category-btn:hover) {
+  font-size: 25px;
+  padding: 5px;
 }
