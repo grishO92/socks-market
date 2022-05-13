@@ -34,7 +34,6 @@
 }
 
 .category-btn {
-  padding: 0px 30px;
   border-radius: 40px;
   border: 1px solid transparent;
   color: var(--dark-color);
@@ -46,11 +45,10 @@
 .category-btn:focus {
   color: white;
   background: var(--main-color);
-  transform: scale(1.03);
-  letter-spacing: 0.2rem;
-  transition-duration: 350ms;
   padding: 10px 20px;
-  border: none;
+  transform: scale(1.1);
+  letter-spacing: 0.3rem;
+  transition-duration: 350ms;
 }
 
 .category-btn:hover {
@@ -64,5 +62,5 @@
 
 .wrapper-category :not(.category-btn:hover, .category-btn:focus) {
   font-size: 25px;
-  padding: 0px;
+  padding: 0;
 }
