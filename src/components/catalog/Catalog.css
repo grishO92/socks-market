@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  width: 70vw;
   overflow: hidden;
 }
 .categories {
@@ -42,15 +43,26 @@
   object-position: center;
 }
 
-.category-btn:hover {
+.category-btn:focus {
   color: white;
   background: var(--main-color);
-  padding: 10px 20px;
-  transform: scale(1.1);
+  transform: scale(1.03);
+  letter-spacing: 0.2rem;
   transition-duration: 350ms;
+  padding: 10px 20px;
+  border: none;
 }
 
-.wrapper-category :not(.category-btn:hover) {
+.category-btn:hover {
+  border: 1px solid var(--dark-color);
+  padding: 10px 20px;
+  transform: scale(1.1);
+  letter-spacing: 0.3rem;
+  transition-duration: 250ms;
+  transform: translateY(-10%);
+}
+
+.wrapper-category :not(.category-btn:hover, .category-btn:focus) {
   font-size: 25px;
-  padding: 5px;
+  padding: 0px;
 }
