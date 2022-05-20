@@ -16,7 +16,3 @@ body {
     rgb(190, 190, 190, 1) 100%
   );
 }
-
-.wrapper {
-  overflow-x: hidden;
-}

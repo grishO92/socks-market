@@ -1,9 +1,25 @@
+import { useEffect, useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './Header.css';
 
 export const Header = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  useEffect(() => {
+    const changeNavAppearance = () => {
+      console.log(window.scrollY);
+      window.scrollY > 700 ? setNavbar(true) : setNavbar(false);
+    };
+
+    window.addEventListener('scroll', changeNavAppearance);
+
+    return () => {
+      window.removeEventListener('scroll', changeNavAppearance);
+    };
+  }, [navbar]);
+
   return (
-    <nav className="nav">
+    <nav className={navbar ? 'nav active' : 'nav'}>
       <Link className="nav-btn btn-logo" to="/">
         socksBysocks
       </Link>
