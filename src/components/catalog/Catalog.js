@@ -19,7 +19,7 @@ export const Catalog = () => {
 
   return (
     <section className="catalog">
-      <section className={navbar ? 'catalog-nav active' : 'catalog-nav'}>
+      <nav className={navbar ? 'catalog-nav active' : 'catalog-nav'}>
         <h1 className="title">Catalog</h1>
         <section className="wrapper-category">
           <article className="categories">
@@ -29,45 +29,40 @@ export const Catalog = () => {
             <button className="category-btn girls">girls</button>
           </article>
         </section>
-      </section>
-      <section className="grid">
-        <aside className="sidebar">
-          <p>size</p>
-          <p>color</p>
-          <p>filter that</p>
-          <p>filter that</p>
-          <p>filter that</p>
-          <p>filter that</p>
-          <p>filter that</p>
-          <p>filter that</p>
-          <p>filter that</p>
-        </aside>
-        <section className="grid-items">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </section>
+      </nav>
+      <aside className="sub-nav">
+        <p>size</p>
+        <p>color</p>
+        <p>promo</p>
+        <p>type</p>
+        <p>season</p>
+      </aside>
+
+      <section className="grid-items">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </section>
     </section>
   );
