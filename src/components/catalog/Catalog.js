@@ -30,13 +30,17 @@ export const Catalog = () => {
           </article>
         </section>
       </nav>
-      <aside className="sub-nav">
-        <p>size</p>
-        <p>color</p>
-        <p>promo</p>
-        <p>type</p>
-        <p>season</p>
-      </aside>
+      {navbar ? (
+        <aside className="sub-nav">
+          <p>size</p>
+          <p>color</p>
+          <p>promo</p>
+          <p>type</p>
+          <p>season</p>
+        </aside>
+      ) : (
+        ''
+      )}
 
       <section className="grid-items">
         <Card />
