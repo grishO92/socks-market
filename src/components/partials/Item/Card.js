@@ -15,10 +15,10 @@ export const Card = () => {
       <div className="card-info">
         <h2 className="card-title">Socks</h2>
         <div className="card-btns">
-          <Link className="card-info-btn" to="/">
+          <button className="card-info-btn" to="/">
             ➕
-          </Link>
-          <button className="card-info-btn">❣️</button>
+          </button>
+          <button className="card-info-btn">🤍</button>
         </div>
       </div>
     </article>

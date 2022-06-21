@@ -32,36 +32,55 @@ export const Catalog = () => {
       </nav>
       {navbar ? (
         <aside className="sub-nav">
-          <select name="size" id="size">
-            <option value="size">size S - 36-41</option>
-            <option value="size">size M - 38-43</option>
-            <option value="size">size L - 40-45</option>
-            <option value="size">size XL 42-47</option>
-          </select>
-          <select name="color" id="color">
-            <option value="color">white</option>
-            <option value="color">black</option>
-            <option value="color">blue</option>
-            <option value="color">green</option>
-            <option value="color">yellow</option>
-            <option value="color">pink</option>
-            <option value="color">golden</option>
-          </select>
-          <select name="promo" id="promo">
-            <option value="promo">without discount</option>
-            <option value="promo">with discount</option>
-          </select>
-          <select name="type" id="type">
-            <option value="type">invinsible</option>
-            <option value="type">short</option>
-            <option value="type">long</option>
-          </select>
-          <select name="season" id="season">
-            <option value="season">spring</option>
-            <option value="season">summper</option>
-            <option value="season">autumn</option>
-            <option value="season">winter</option>
-          </select>
+          <article className="sub-nav-article">
+            <label htmlFor="size">size</label>
+            <select name="size" id="size">
+              <option value="size">all</option>
+              <option value="size">S - 36-41</option>
+              <option value="size">M - 38-43</option>
+              <option value="size">L - 40-45</option>
+              <option value="size">XL 42-47</option>
+            </select>
+          </article>
+          <article className="sub-nav-article">
+            <label htmlFor="size">color</label>
+            <select name="color" id="color">
+              <option value="color">all</option>
+              <option value="color">⬜white</option>
+              <option value="color">⬛black</option>
+              <option value="color">🟦blue</option>
+              <option value="color">🟩green</option>
+              <option value="color">🟨yellow</option>
+              <option value="color">🟫brown</option>
+              <option value="color">🟧orange</option>
+            </select>
+          </article>
+          <article className="sub-nav-article">
+            <label htmlFor="size">discount</label>
+            <select name="promo" id="promo">
+              <option value="promo">yes</option>
+              <option value="promo">no</option>
+            </select>
+          </article>
+          <article className="sub-nav-article">
+            <label htmlFor="size">type</label>
+            <select name="type" id="type">
+              <option value="type">all</option>
+              <option value="type">invinsible</option>
+              <option value="type">short</option>
+              <option value="type">long</option>
+            </select>
+          </article>
+          <article className="sub-nav-article">
+            <label htmlFor="size">season</label>
+            <select name="season" id="season">
+              <option value="season">all</option>
+              <option value="season">spring</option>
+              <option value="season">summer</option>
+              <option value="season">autumn</option>
+              <option value="season">winter</option>
+            </select>
+          </article>
         </aside>
       ) : (
         ''
