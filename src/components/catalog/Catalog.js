@@ -61,12 +61,6 @@ export const Catalog = () => {
         <Card />
         <Card />
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
       </section>
     </section>
   );
