@@ -36,10 +36,10 @@ export const Catalog = () => {
             <label htmlFor="size">size</label>
             <select name="size" id="size">
               <option value="size">all</option>
-              <option value="size">S - 36-41</option>
-              <option value="size">M - 38-43</option>
-              <option value="size">L - 40-45</option>
-              <option value="size">XL 42-47</option>
+              <option value="size">S (36-41)</option>
+              <option value="size">M (38-43)</option>
+              <option value="size">L (40-45)</option>
+              <option value="size">XL (42-47)</option>
             </select>
           </article>
           <article className="sub-nav-article">
@@ -81,6 +81,7 @@ export const Catalog = () => {
               <option value="season">winter</option>
             </select>
           </article>
+          <button className="apply-filters">apply</button>
         </aside>
       ) : (
         ''
