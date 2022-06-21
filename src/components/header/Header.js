@@ -7,7 +7,6 @@ export const Header = () => {
 
   useEffect(() => {
     const changeNavAppearance = () => {
-      console.log(window.scrollY);
       window.scrollY > 700 ? setNavbar(true) : setNavbar(false);
     };
 
