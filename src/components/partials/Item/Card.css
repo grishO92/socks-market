@@ -76,6 +76,8 @@
   padding: 10px;
   background-color: var(--main-color);
   color: white;
+  border: none;
+  cursor: pointer;
   border-radius: 20px;
   transition-duration: 270ms;
 }

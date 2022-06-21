@@ -18,9 +18,7 @@ export const Card = () => {
           <Link className="card-info-btn" to="/">
             ➕
           </Link>
-          <Link className="card-info-btn" to="/">
-            ❣️
-          </Link>
+          <button className="card-info-btn">❣️</button>
         </div>
       </div>
     </article>
